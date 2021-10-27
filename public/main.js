@@ -4,7 +4,7 @@ const cityInput = document.querySelector('#city-input')
 
 // Fetch weather data from API
 const fetchWeather = async (city) => {
-  const url = `http://localhost:5000/api?city=${city}`
+  const url = `/api?city=${city}`
   
   const res = await fetch(url)
   const data = await res.json()
